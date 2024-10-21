@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true,
+    optimizePackageImports: ['@kickass-dev/shared'],
   },
+  transpilePackages: ['@kickass-dev/shared'],
 }
 
 module.exports = nextConfig
